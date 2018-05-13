@@ -1,0 +1,28 @@
+https://github.com/jjincai/linuxstudy.git
+
+   54  sudo apt install gdebi-core
+   67  mv lantern-installer-64-bit.deb /bin
+   68  cd /bin
+   69  ls
+   70  sudo gdebi lantern-installer-64-bit.deb
+   71  apt-cache search libappindicators3
+   72  ls
+   73  apt-get install gir1.2-appindicator3-0-1
+   74  apt-get install gir1.2-appindicator3-0.1
+   75  git config ==globalo user.name jjincai
+   76  git config --global user.name jjincai
+   77  git config --global user.email jjincai@126.com
+   78  ssh-keygen -t rsa -C jjincai@126.com
+   79  cd /root/.ssh
+   80  cat id_rsa.pub
+   81  ssh git@github.com
+   82  cd /usr/share/linuxstudy/
+   83  cd /usr/share/
+   84  mkdir linuxstudy
+   85  cd linuxstudy
+   86  git init
+   87  touch README
+   88  git add README
+   89  git commit -m 'first commit'
+   98  git remote add orgin git@github.com:jjincai/linuxstudy.git
+   99  git push -u orgin master
